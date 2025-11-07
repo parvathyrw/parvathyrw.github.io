@@ -1,0 +1,12 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(if [ -f \"d:/My/my Codes/parvathyrw/.gitignore\" ])",
+      "Bash(then cat \"d:/My/my Codes/parvathyrw/.gitignore\")",
+      "Bash(else echo \"File does not exist\")",
+      "Bash(fi)"
+    ],
+    "deny": [],
+    "ask": []
+  }
+}

@@ -1,0 +1,5 @@
+# Keep profile photo private - not shared in source repo
+static/images/profile.jpg
+
+# Build output
+public/

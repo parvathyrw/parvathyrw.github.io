@@ -81,7 +81,15 @@ body {
 }
 
 .about-header {
-  margin-bottom: 3rem;
+  margin-bottom: 1.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 2rem;
+}
+
+.about-text {
+  flex: 1;
 }
 
 .about-title {
@@ -98,38 +106,59 @@ body {
   font-weight: 400;
 }
 
+/* ===== PROFILE PHOTO ===== */
+.profile-photo-container {
+  flex-shrink: 0;
+  margin-top: 1.5rem;
+}
+
+.profile-photo-wrapper {
+  position: relative;
+  width: 150px;
+  height: 150px;
+}
+
+.profile-photo {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  object-fit: cover;
+  display: block;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
 .about-content {
   font-size: 1.05rem;
   line-height: 1.7;
   color: #4a4a4a;
-  margin-bottom: 3rem;
+  margin-bottom: 2rem;
 }
 
 .about-content h2 {
   font-size: 1.5rem;
   color: #1a1a1a;
-  margin-top: 2.5rem;
-  margin-bottom: 1rem;
+  margin-top: 1.25rem;
+  margin-bottom: 0.5rem;
   font-weight: 600;
 }
 
 .about-content h3 {
   font-size: 1.25rem;
   color: #1a1a1a;
-  margin-top: 2rem;
-  margin-bottom: 0.75rem;
+  margin-top: 1rem;
+  margin-bottom: 0.4rem;
   font-weight: 600;
 }
 
 .about-content p {
-  margin-bottom: 1.25rem;
+  margin-bottom: 1rem;
 }
 
 .social-links {
   display: flex;
   justify-content: flex-start;
   gap: 1rem;
-  margin: 2.5rem 0;
+  margin: 1.5rem 0;
 }
 
 .social-link {
@@ -152,7 +181,7 @@ body {
 }
 
 .cta-section {
-  margin-top: 2.5rem;
+  margin-top: 1.5rem;
 }
 
 .cta-button {
@@ -185,7 +214,7 @@ body {
 
 .publications-title {
   font-size: 2.5rem;
-  color: #1a1a1a;
+  color: #6d28d9;
   margin-bottom: 0.75rem;
   font-weight: 700;
   letter-spacing: -0.02em;
@@ -308,6 +337,10 @@ body.dark-mode .about-subtitle {
   color: #a78bfa;
 }
 
+body.dark-mode .profile-photo {
+  box-shadow: 0 2px 12px rgba(139, 92, 246, 0.3);
+}
+
 body.dark-mode .about-content {
   color: #b8b8b8;
 }
@@ -336,7 +369,7 @@ body.dark-mode .cta-button:hover {
 }
 
 body.dark-mode .publications-title {
-  color: #e5e5e5;
+  color: #c4b5fd;
 }
 
 body.dark-mode .publications-description {
@@ -390,6 +423,21 @@ body.dark-mode .dev-credit {
     padding: 2.5rem 1.5rem;
   }
 
+  .about-header {
+    flex-direction: column-reverse;
+    gap: 2rem;
+    text-align: center;
+  }
+
+  .profile-photo-wrapper {
+    width: 120px;
+    height: 120px;
+  }
+
+  .profile-photo-container {
+    margin-top: 0;
+  }
+
   .about-title, .publications-title {
     font-size: 2rem;
   }
@@ -417,6 +465,11 @@ body.dark-mode .dev-credit {
 
   .content-wrapper {
     padding: 2rem 1.25rem;
+  }
+
+  .profile-photo-wrapper {
+    width: 100px;
+    height: 100px;
   }
 
   .about-title, .publications-title {

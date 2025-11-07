@@ -1,0 +1,39 @@
+{% extends "base.html" %}
+
+{% block title %}{{ section.title }}{% endblock title %}
+
+{% block content %}
+<div class="section-page">
+  <div class="section-header">
+    <h1 class="section-title">{{ section.title }}</h1>
+    {% if section.description %}
+    <p class="section-description">{{ section.description }}</p>
+    {% endif %}
+  </div>
+
+  <div class="section-content">
+    {{ section.content | safe }}
+  </div>
+
+  {# If you want to list pages in this section (like articles does) #}
+  {% if section.pages %}
+  <ul class="section-list">
+    {% for page in section.pages %}
+    <li class="section-item">
+      <h2 class="section-item-title">
+        <a href="{{ page.permalink }}">{{ page.title }}</a>
+      </h2>
+      {% if page.description %}
+      <p class="section-item-description">{{ page.description }}</p>
+      {% endif %}
+      {% if page.date %}
+      <time class="section-item-date" datetime="{{ page.date }}">
+        {{ page.date | date(format="%B %d, %Y") }}
+      </time>
+      {% endif %}
+    </li>
+    {% endfor %}
+  </ul>
+  {% endif %}
+</div>
+{% endblock content %}
