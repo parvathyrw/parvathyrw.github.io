@@ -288,19 +288,30 @@ body {
   margin: 0 auto;
   padding: 2rem;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   font-size: 0.9rem;
   color: #888;
+  position: relative;
 }
 
 .copyright {
   color: #888;
+  text-align: center;
 }
 
 .dev-credit {
-  font-size: 0.85rem;
+  font-size: 0.6rem;
   color: #aaa;
+  position: absolute;
+  right: 0;
+  bottom: 0.3rem;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.dev-credit:hover {
+  color: #8b5cf6;
 }
 
 /* ===== DARK MODE ===== */
@@ -455,6 +466,11 @@ body.dark-mode .dev-credit {
     gap: 0.5rem;
     text-align: center;
     padding: 1.5rem;
+  }
+
+  .dev-credit {
+    position: static;
+    margin-top: 0.25rem;
   }
 }
 
