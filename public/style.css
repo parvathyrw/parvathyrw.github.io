@@ -27,7 +27,7 @@ body {
   margin: 0 auto;
   padding: 0 2rem;
   display: flex;
-  justify-content: flex-start;
+  justify-content: space-between;
   align-items: center;
 }
 
@@ -36,8 +36,25 @@ body {
   gap: 2rem;
 }
 
+.theme-toggle {
+  background: none;
+  border: none;
+  color: #8b5cf6;
+  font-size: 1.1rem;
+  cursor: pointer;
+  padding: 0.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: color 0.2s ease;
+}
+
+.theme-toggle:hover {
+  color: #a78bfa;
+}
+
 .nav-link {
-  color: #6096B4;
+  color: #8b5cf6;
   text-decoration: none;
   font-weight: 400;
   font-size: 1rem;
@@ -45,7 +62,7 @@ body {
 }
 
 .nav-link:hover {
-  color: #1a1a1a;
+  color: #a78bfa;
 }
 
 /* ===== MAIN CONTENT ===== */
@@ -69,7 +86,7 @@ body {
 
 .about-title {
   font-size: 2.5rem;
-  color: #1a1a1a;
+  color: #6d28d9;
   margin-bottom: 0.75rem;
   font-weight: 700;
   letter-spacing: -0.02em;
@@ -77,7 +94,7 @@ body {
 
 .about-subtitle {
   font-size: 1.1rem;
-  color: #6096B4;
+  color: #a78bfa;
   font-weight: 400;
 }
 
@@ -122,7 +139,7 @@ body {
   align-items: center;
   justify-content: center;
   background-color: #f5f5f5;
-  color: #6096B4;
+  color: #8b5cf6;
   border-radius: 50%;
   text-decoration: none;
   font-size: 1.15rem;
@@ -130,7 +147,7 @@ body {
 }
 
 .social-link:hover {
-  background-color: #6096B4;
+  background-color: #8b5cf6;
   color: #ffffff;
 }
 
@@ -143,7 +160,7 @@ body {
   align-items: center;
   gap: 0.5rem;
   padding: 0.75rem 1.5rem;
-  background-color: #6096B4;
+  background-color: #8b5cf6;
   color: #ffffff;
   text-decoration: none;
   border-radius: 6px;
@@ -153,7 +170,7 @@ body {
 }
 
 .cta-button:hover {
-  background-color: #4a7a94;
+  background-color: #a78bfa;
 }
 
 /* ===== PUBLICATIONS PAGE ===== */
@@ -212,7 +229,7 @@ body {
 }
 
 .publication-title a:hover {
-  color: #6096B4;
+  color: #8b5cf6;
 }
 
 .publication-description {
@@ -255,6 +272,104 @@ body {
 .dev-credit {
   font-size: 0.85rem;
   color: #aaa;
+}
+
+/* ===== DARK MODE ===== */
+body.dark-mode {
+  background-color: #1a1a1a;
+  color: #e5e5e5;
+}
+
+body.dark-mode .main-nav {
+  border-bottom-color: #333;
+}
+
+body.dark-mode .nav-link {
+  color: #c4b5fd;
+}
+
+body.dark-mode .nav-link:hover {
+  color: #ddd6fe;
+}
+
+body.dark-mode .theme-toggle {
+  color: #c4b5fd;
+}
+
+body.dark-mode .theme-toggle:hover {
+  color: #ddd6fe;
+}
+
+body.dark-mode .about-title {
+  color: #c4b5fd;
+}
+
+body.dark-mode .about-subtitle {
+  color: #a78bfa;
+}
+
+body.dark-mode .about-content {
+  color: #b8b8b8;
+}
+
+body.dark-mode .about-content h2,
+body.dark-mode .about-content h3 {
+  color: #e5e5e5;
+}
+
+body.dark-mode .social-link {
+  background-color: #2a2a2a;
+  color: #c4b5fd;
+}
+
+body.dark-mode .social-link:hover {
+  background-color: #8b5cf6;
+  color: #ffffff;
+}
+
+body.dark-mode .cta-button {
+  background-color: #8b5cf6;
+}
+
+body.dark-mode .cta-button:hover {
+  background-color: #a78bfa;
+}
+
+body.dark-mode .publications-title {
+  color: #e5e5e5;
+}
+
+body.dark-mode .publications-description {
+  color: #b8b8b8;
+}
+
+body.dark-mode .publication-item {
+  border-bottom-color: #333;
+}
+
+body.dark-mode .publication-title a {
+  color: #e5e5e5;
+}
+
+body.dark-mode .publication-title a:hover {
+  color: #c4b5fd;
+}
+
+body.dark-mode .publication-description {
+  color: #b8b8b8;
+}
+
+body.dark-mode .publication-date {
+  color: #888;
+}
+
+body.dark-mode .site-footer {
+  border-top-color: #333;
+}
+
+body.dark-mode .copyright,
+body.dark-mode .dev-credit {
+  color: #888;
 }
 
 /* ===== RESPONSIVE DESIGN ===== */

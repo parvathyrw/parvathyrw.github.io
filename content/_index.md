@@ -1,10 +1,10 @@
 +++
-title = "Parvathy"
+title = "Parvathy R Warrier"
 +++
 
 ## Welcome
 
-I am a researcher and academic writer passionate about exploring complex ideas and sharing knowledge through published work. My research focuses on [your research area], and I am dedicated to contributing meaningful insights to the academic community.
+I am a researcher and academic writer passionate about exploring complex ideas and sharing knowledge through published work. My research focuses on **Shalakyatantra**, and I am dedicated to contributing meaningful insights to the academic community.
 
 ### About My Work
 
