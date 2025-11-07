@@ -1,0 +1,32 @@
+{% extends "base.html" %}
+
+{% block title %}{{ section.title }}{% endblock title %}
+
+{% block content %}
+<div class="publications-page">
+  <div class="publications-header">
+    <h1 class="publications-title">{{ section.title }}</h1>
+    <p class="publications-description">{{ section.content | safe }}</p>
+  </div>
+
+  <ul class="publications-list">
+    {% for page in section.pages %}
+    <li class="publication-item">
+      <div class="publication-info">
+        <h2 class="publication-title">
+          <a href="{{ page.permalink }}">{{ page.title }}</a>
+        </h2>
+        {% if page.description %}
+        <p class="publication-description">{{ page.description }}</p>
+        {% endif %}
+        {% if page.date %}
+        <time class="publication-date" datetime="{{ page.date }}">
+          {{ page.date | date(format="%B %d, %Y") }}
+        </time>
+        {% endif %}
+      </div>
+    </li>
+    {% endfor %}
+  </ul>
+</div>
+{% endblock content %}

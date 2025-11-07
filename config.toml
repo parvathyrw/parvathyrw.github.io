@@ -1,5 +1,7 @@
 # The URL the site will be built for
-base_url = "https://example.com"
+base_url = "https://parvathyrw.github.io"
+title = "Parvathy"
+description = "Research and Academic Publications"
 
 # Whether to automatically compile all Sass files in the sass directory
 compile_sass = false
@@ -13,4 +15,5 @@ build_search_index = false
 highlight_code = false
 
 [extra]
-# Put all your custom variables here
+# Author information
+author = "Parvathy"

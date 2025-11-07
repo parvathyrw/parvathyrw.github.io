@@ -1,0 +1,32 @@
+{% extends "base.html" %}
+
+{% block title %}{{ section.title }} - About Me{% endblock title %}
+
+{% block content %}
+<article class="about-section">
+  <div class="about-header">
+    <h1 class="about-title">{{ section.title }}</h1>
+    <p class="about-subtitle">Researcher & Academic Writer</p>
+  </div>
+
+  <div class="about-content">
+    {{ section.content | safe }}
+  </div>
+
+  <div class="social-links">
+    <a href="#" class="social-link" aria-label="Facebook" title="Facebook">
+      <i class="fab fa-facebook"></i>
+    </a>
+    <a href="#" class="social-link" aria-label="Email" title="Email">
+      <i class="fas fa-envelope"></i>
+    </a>
+  </div>
+
+  <div class="cta-section">
+    <a href="/articles" class="cta-button">
+      View My Publications
+      <i class="fas fa-arrow-right"></i>
+    </a>
+  </div>
+</article>
+{% endblock content %}
